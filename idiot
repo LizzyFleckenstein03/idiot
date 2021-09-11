@@ -1,0 +1,418 @@
+#! /bin/bash
+args=$2 $3 $4 $5 $6 $7 $8 $9
+case $1 in
+"hinzufügen")
+git add $args
+;;
+"briefanwenden")
+git am $args
+;;
+"archiv")
+git archive $args
+;;
+"binärfestlegungssuche")
+git bisect $args
+;;
+"ast")
+git branch $args
+;;
+"zusammenstellen")
+git bundle $args
+;;
+"auswählen")
+git checkout $args
+;;
+"kirsch-aussuchen")
+git cherry-pick $args
+;;
+"festlegeninteraktivwerkzeug")
+git citool $args
+;;
+"säubern")
+git clean $args
+;;
+"klonen")
+git clone $args
+;;
+"festlegen")
+git commit $args
+;;
+"beschreiben")
+git describe $args
+;;
+"unterschied")
+git diff $args
+;;
+"abholen")
+git fetch $args
+;;
+"pflaster-formatierung")
+git format-patch $args
+;;
+"müllaufräumer")
+git gc $args
+;;
+"idiotwerkzeugkasten")
+git gitk $args
+;;
+"grapschen")
+git grep $args
+;;
+"grafischebenutzeroberfläche")
+git gui $args
+;;
+"initialisieren")
+git init $args
+;;
+"protokoll")
+git log $args
+;;
+"verschmelzen")
+git merge $args
+;;
+"bewegen")
+git mv $args
+;;
+"anmerkungen")
+git notes $args
+;;
+"ziehen")
+git pull $args
+;;
+"schieben")
+git push $args
+;;
+"reichweite-unterschied")
+git range-diff $args
+;;
+"umbauen")
+git rebase $args
+;;
+"zurücksetzen")
+git reset $args
+;;
+"wiederherstellen")
+git restore $args
+;;
+"rückgängigmachen")
+git revert $args
+;;
+"entfernen")
+git rm $args
+;;
+"kurzprotokoll")
+git shortlog $args
+;;
+"zeigen")
+git show $args
+;;
+"spärlich-auswählen")
+git sparse-checkout $args
+;;
+"lagern")
+git stash $args
+;;
+"zustand")
+git status $args
+;;
+"untermodul")
+git submodule $args
+;;
+"wechseln")
+git switch $args
+;;
+"schild")
+git tag $args
+;;
+"arbeitsbaum")
+git worktree $args
+;;
+"konfiguration")
+git config $args
+;;
+"schnell-ausfuhr")
+git fast-export $args
+;;
+"schnell-einfuhr")
+git fast-import $args
+;;
+"sieb-ast")
+git filter-branch $args
+;;
+"verschmelzungswerkzeug")
+git mergetool $args
+;;
+"verpacken-verweise")
+git pack-refs $args
+;;
+"beschneiden")
+git prune $args
+;;
+"verweisprotokoll")
+git reflog $args
+;;
+"entfernt")
+git remote $args
+;;
+"umpacken")
+git repack $args
+;;
+"ersetzen")
+git replace $args
+;;
+"kommentieren")
+git annotate $args
+;;
+"beschuldigen")
+git blame $args
+;;
+"zählen-gegenstände")
+git count-objects $args
+;;
+"unterschiedwerkzeug")
+git difftool $args
+;;
+"ficken")
+git fsck $args
+;;
+"idiotnetz")
+git gitweb $args
+;;
+"hilfe")
+git help $args
+;;
+"dringendnetz")
+git instaweb $args
+;;
+"verschmelzen-baum")
+git merge-tree $args
+;;
+"aufgezeichnetelösungwiederverwenden")
+git rerere $args
+;;
+"zeige-ast")
+git show-branch $args
+;;
+"überprüfen-festlegen")
+git verify-commit $args
+;;
+"überprüfen-schild")
+git verify-tag $args
+;;
+"washatsichgeändert")
+git whatchanged $args
+;;
+"archiveinfuhr")
+git archimport $args
+;;
+"kommasepariertewerteausfuhrfestlegen")
+git cvsexportcommit $args
+;;
+"kommasepariertewerteeinfuhr")
+git cvsimport $args
+;;
+"kommasepariertewerteministrant")
+git cvsserver $args
+;;
+"zwischennetznachrichtenzugriffsprotokoll-senden")
+git imap-send $args
+;;
+"notwendig4")
+git p4 $args
+;;
+"deckeeinfuhr")
+git quiltimport $args
+;;
+"anfragen-ziehen")
+git request-pull $args
+;;
+"senden-elektronischerbrief")
+git send-email $args
+;;
+"untergrabung")
+git svn $args
+;;
+"anwenden")
+git apply $args
+;;
+"auswählen-verzeichnis")
+git checkout-index $args
+;;
+"festlegen-diagramm")
+git commit-graph $args
+;;
+"festlegen-baum")
+git commit-tree $args
+;;
+"durcheinander-gegenstand")
+git hash-object $args
+;;
+"verzeichnis-verpacken")
+git index-pack $args
+;;
+"verschmelzen-akte")
+git merge-file $args
+;;
+"verschmelzen-verzeichnis")
+git merge-index $args
+;;
+"erstellenschild")
+git mktag $args
+;;
+"erstellenbaum")
+git mktree $args
+;;
+"mehr-verpacken-verzeichnis")
+git multi-pack-index $args
+;;
+"verpacken-gegenstände")
+git pack-objects $args
+;;
+"beschneiden-verpacken")
+git prune-packed $args
+;;
+"lesen-baum")
+git read-tree $args
+;;
+"sinnbildlich-verweis")
+git symbolic-ref $args
+;;
+"auspacken-gegenstände")
+git unpack-objects $args
+;;
+"aktualisieren-verzeichnis")
+git update-index $args
+;;
+"aktualisieren-verweis")
+git update-ref $args
+;;
+"schreiben-baum")
+git write-tree $args
+;;
+"verketten-akte")
+git cat-file $args
+;;
+"kirsche")
+git cherry $args
+;;
+"unterschied-akten")
+git diff-files $args
+;;
+"unterschied-verzeichnis")
+git diff-index $args
+;;
+"unterschied-baum")
+git diff-tree $args
+;;
+"für-jedes-verweis")
+git for-each-ref $args
+;;
+"bekomme-band-festlegen-ausweis")
+git get-tar-commit-id $args
+;;
+"liste-akten")
+git ls-files $args
+;;
+"liste-entfernt")
+git ls-remote $args
+;;
+"liste-baum")
+git ls-tree $args
+;;
+"verschmelzen-boden")
+git merge-base $args
+;;
+"benennen-umgekehrt")
+git name-rev $args
+;;
+"verpacken-überflüssig")
+git pack-redundant $args
+;;
+"umgekehrt-liste")
+git rev-list $args
+;;
+"umgekehrt-analysieren")
+git rev-parse $args
+;;
+"zeigen-verzeichnis")
+git show-index $args
+;;
+"zeigen-verweis")
+git show-ref $args
+;;
+"auspacken-akte")
+git unpack-file $args
+;;
+"veränderlich")
+git var $args
+;;
+"überprüfen-verpacken")
+git verify-pack $args
+;;
+"dämon")
+git daemon $args
+;;
+"abholen-verpacken")
+git fetch-pack $args
+;;
+"überwortlautübertragenniederschrift-hinterende")
+git http-backend $args
+;;
+"senden-verpacken")
+git send-pack $args
+;;
+"aktualisieren-ministrant-prüfbericht")
+git update-server-info $args
+;;
+"prüfen-eigenschaft")
+git check-attr $args
+;;
+"prüfen-vernachlässigen")
+git check-ignore $args
+;;
+"prüfen-briefkarte")
+git check-mailmap $args
+;;
+"prüfen-verweis-formatieren")
+git check-ref-format $args
+;;
+"säule")
+git column $args
+;;
+"berechtigungsnachweis")
+git credential $args
+;;
+"berechtigungsnachweis-zwischenspeicher")
+git credential-cache $args
+;;
+"berechtigungsnachweis-geschäft")
+git credential-store $args
+;;
+"strukturieren-verschmelzen-nachricht")
+git fmt-merge-msg $args
+;;
+"deuten-vorschau")
+git interpret-trailers $args
+;;
+"briefinformation")
+git mailinfo $args
+;;
+"briefzerteilen")
+git mailsplit $args
+;;
+"verschmelzen-eins-akte")
+git merge-one-file $args
+;;
+"pflaster-ausweis")
+git patch-id $args
+;;
+"muschel-zwischenländlichachtzehnlage")
+git sh-i18n $args
+;;
+"muschel-umstände")
+git sh-setup $args
+;;
+"streifenraum")
+git stripspace $args
+;;
+esac
