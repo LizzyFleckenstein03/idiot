@@ -18,7 +18,7 @@ pf:close()
 
 local f = io.open("idiot", "w")
 f:write("#! /bin/bash\n")
-f:write("args=$2 $3 $4 $5 $6 $7 $8 $9\n")
+f:write("args=\"${@:2:$#}\"\n")
 
 f:write("case $1 in\n")
 
